@@ -34,7 +34,6 @@ const SigninForm = ({setisLoggedIn}) => {
   const handleSubmit=async(e)=>{
     e.preventDefault()
     const response=await fetch(`${process.env.NEXT_PUBLIC_BACKEND}/api/auth/login`, {
-      mode:'no-cors',
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         headers: {
           'Content-Type': 'application/json'

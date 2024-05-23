@@ -54,7 +54,6 @@ const RegisterForm = ({props}) => {
     setalertText("")
 try {
   const apiResponse = await fetch(`${process.env.NEXT_PUBLIC_BACKEND}/api/auth/createuser`,{
-    mode:'no-cors',
     method:'POST',
     headers:{
       Accept:'application.json',
